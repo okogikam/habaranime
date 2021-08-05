@@ -169,6 +169,32 @@ scratch. This page gets rid of all links and provides the needed markup only.
       .header-anime {
         grid-template-columns: 200px auto;
       }
+      .char-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+      .char-card p {
+        font-size: 0.95rem;
+      }
+      .char-1,
+      .char-2 {
+        display: grid;
+        gap: 5px;
+      }
+      .char-1 {
+        grid-template-columns: 50px auto;
+      }
+      .char-2 {
+        text-align: right;
+        grid-template-columns: auto 50px;
+      }
+      .char-card img {
+        max-width: 100%;
+        display: flex;
+      }
     </style>
     <link rel="stylesheet" href="../ampunnya/dist/css/news.css" />
     <!--w3 slideshow -->
@@ -362,13 +388,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </div>
                 </div>
                 <div class="col-sm-12 tab" id="karakter">
-                  <div class="card p-3">
+                  <div class="col-sm-12 p-3">
                     <h3>Karakter</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nesciunt pariatur nihil eum. Totam tempore officiis
-                      laborum magni quas soluta culpa.
-                    </p>
+                    <div class="card char-card">
+                      <div class="char-1">
+                        <img src="../wallpaper/1068361.jpg" alt="" />
+                        <p>Lorem ipsum dolor sit amet.</p>
+                      </div>
+                      <div class="char-2">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <img
+                          src="../wallpaper/54563dcba84adffd568d3d31165f2f24.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-sm-12 tab" id="nonton">
